@@ -7,20 +7,26 @@ let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
 let addresses = [
 	'www.visa.com.hk:2096#假装是香港',
 	'icook.tw:2053#假装是台湾',
-	'cloudflare.cfgo.cc#真的是美国'
+	'antusa.36du.xyz:443',
+	'usa.trgps.cloudns.org:443',
+	'usb.36du.xyz:443',
+	'usacn.trgps.cloudns.org:443',
+	'usbcn.36du.xyz:443',
+	'skk.moe:443',
+	'cloudflare.cfgo.cc' , 
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt' //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/trenzero/cfworksvless2sub/main/addressesapi.txt?token=GHSAT0AAAAAACO2WM5KLQRKXOQ3JW6OW7XSZO6TWEQ' //可参考内容格式 自行搭建。
 ];
 
 let DLS = 4;//速度下限
 let addressescsv = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv' //iptest测速结果文件。
+	//'https://raw.githubusercontent.com/trenzero/cfworksvless2sub/main/addressescsv.csv?token=GHSAT0AAAAAACO2WM5LAQT3BUGPUQMZNDXAZO6TXSQ' //iptest测速结果文件。
 ];
 
-let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconverter = "sub.tren.dedyn.io"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅配置文件
 
 let link = '';
@@ -30,6 +36,14 @@ let proxyIPs = [
 	'cdn.xn--b6gac.eu.org',
 	'cdn-all.xn--b6gac.eu.org',
 	'edgetunnel.anycast.eu.org',
+	'cdnhk.huabuxiang.vip', 
+	'ali.055500.xyz', 
+	'yx.kkkong.pp.ua', 
+	'cdn.shanggan.pp.ua', 
+	'443.xiangmq1969.xyz', 
+	'hk.100366.xyz', 
+	'sp.rweek.top', 
+	'cip.951535.xyz', 
 ];
 let CMproxyIPs = [
 	//{ proxyIP: "proxyip.fxxk.dedyn.io", type: "US" },
