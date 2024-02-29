@@ -6,24 +6,17 @@ let mytoken= 'auto';//快速订阅访问入口, 留空则不启动快速订阅
 // 设置优选地址，不带端口号默认8443，不支持非TLS订阅生成
 let addresses = [
 	'www.visa.com.hk:2096#假装是香港',
-	'icook.tw:2053#假装是台湾',
-	'antusa.36du.xyz:443',
-	'usa.trgps.cloudns.org:443',
-	'usb.36du.xyz:443',
-	'usacn.trgps.cloudns.org:443',
-	'usbcn.36du.xyz:443',
-	'skk.moe:443',
-	'cloudflare.cfgo.cc' , 
+	'icook.tw:2053#假装是台湾', 
 ];
 
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/trenzero/cfworksvless2sub/main/addressesapi.txt?token=GHSAT0AAAAAACO2WM5KLQRKXOQ3JW6OW7XSZO6TWEQ' //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/trenzero/cfworksvless2sub/main/addressesapi' //可参考内容格式 自行搭建。
 ];
 
 let DLS = 4;//速度下限
 let addressescsv = [
-	//'https://raw.githubusercontent.com/trenzero/cfworksvless2sub/main/addressescsv.csv?token=GHSAT0AAAAAACO2WM5LAQT3BUGPUQMZNDXAZO6TXSQ' //iptest测速结果文件。
+	//'https://raw.githubusercontent.com/trenzero/cfworksvless2sub/main/addressescsv.csv' //iptest测速结果文件。
 ];
 
 let subconverter = "sub.tren.dedyn.io"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
